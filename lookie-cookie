@@ -1,9 +1,0 @@
-import browsercookie
-import json
-
-# Get the cookies from Chrome or Firefox
-cj = browsercookie.chrome() # or browsercookie.firefox()
-
-# Write the cookies to a file
-with open('cookies.json', 'w') as f:
-    json.dump(list(cj), f)
